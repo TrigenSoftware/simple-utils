@@ -1,17 +1,13 @@
-# simple-utils
+# simple-libs
 
-[![Node version][node]][node-url]
 [![Build status][build]][build-url]
 [![Coverage status][coverage]][coverage-url]
 
-[node]: https://img.shields.io/node/v/simple-utils.svg
-[node-url]: https://nodejs.org
+[build]: https://img.shields.io/github/actions/workflow/status/TrigenSoftware/simple-libs/tests.yml?branch=main
+[build-url]: https://github.com/TrigenSoftware/simple-libs/actions
 
-[build]: https://img.shields.io/github/actions/workflow/status/TrigenSoftware/simple-utils/tests.yml?branch=main
-[build-url]: https://github.com/TrigenSoftware/simple-utils/actions
-
-[coverage]: https://img.shields.io/codecov/c/github/TrigenSoftware/simple-utils.svg
-[coverage-url]: https://app.codecov.io/gh/TrigenSoftware/simple-utils
+[coverage]: https://img.shields.io/codecov/c/github/TrigenSoftware/simple-libs.svg
+[coverage-url]: https://app.codecov.io/gh/TrigenSoftware/simple-libs
 
 A set of packages with simple utilities.
 

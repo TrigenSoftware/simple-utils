@@ -7,4 +7,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* a small library to parse hosted git info ([6141518](https://github.com/TrigenSoftware/simple-utils/commit/6141518b1703c9766c54ec3d73c22becc8eece52))
+* a small library to parse hosted git info ([6141518](https://github.com/TrigenSoftware/simple-libs/commit/6141518b1703c9766c54ec3d73c22becc8eece52))
