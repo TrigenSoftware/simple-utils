@@ -26,8 +26,8 @@
 [build]: https://img.shields.io/github/actions/workflow/status/TrigenSoftware/simple-libs/tests.yml?branch=main
 [build-url]: https://github.com/TrigenSoftware/simple-libs/actions
 
-[coverage]: https://img.shields.io/codecov/c/github/TrigenSoftware/simple-libs.svg?flag=@simple-libs/hosted-git-info
-[coverage-url]: https://app.codecov.io/gh/TrigenSoftware/simple-libs/tree/main/packages%2Fhosted-git-info
+[coverage]: https://coveralls.io/repos/github/TrigenSoftware/simple-libs/badge.svg?branch=main
+[coverage-url]: https://coveralls.io/github/TrigenSoftware/simple-libs?branch=main
 
 A small library to parse hosted git info.
 
