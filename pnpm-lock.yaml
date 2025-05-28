@@ -60,6 +60,16 @@ importers:
         specifier: ^3.0.0
         version: 3.1.4(@types/node@22.15.23)(jiti@2.4.2)
 
+  packages/child-process-utils:
+    dependencies:
+      '@simple-libs/stream-utils':
+        specifier: workspace:^
+        version: link:../stream-utils
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.15.23
+    publishDirectory: package
+
   packages/hosted-git-info:
     publishDirectory: package
 
