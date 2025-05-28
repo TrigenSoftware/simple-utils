@@ -94,6 +94,6 @@ jobs:
         uses: codecov/codecov-action@v5
         if: success()
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: ./packages/${{ matrix.workspace }}/coverage/lcov.info
-          name: ${{ matrix.workspace }}
           flags: ${{ matrix.workspace }}
