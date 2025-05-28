@@ -10,6 +10,7 @@
     "node": true
   },
   "ignorePatterns": [
-    "packages/*/dist/**/*"
+    "packages/*/dist/**/*",
+    "packages/*/package/**/*"
   ]
 }
