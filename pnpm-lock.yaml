@@ -63,6 +63,13 @@ importers:
   packages/hosted-git-info:
     publishDirectory: package
 
+  packages/stream-utils:
+    dependencies:
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.15.23
+    publishDirectory: package
+
 packages:
 
   '@ampproject/remapping@2.3.0':
