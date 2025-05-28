@@ -1,0 +1,50 @@
+{
+  "name": "simple-utils",
+  "type": "module",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A set of packages with simple utilities.",
+  "author": "dangreen",
+  "license": "MIT",
+  "funding": "https://ko-fi.com/dangreen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TrigenSoftware/simple-release-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TrigenSoftware/simple-release-tools/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "clear": "pnpm -r --parallel clear",
+    "build": "pnpm -r --parallel build",
+    "lint": "pnpm -r --parallel --if-present lint",
+    "test:unit": "pnpm -r --parallel --if-present test:unit",
+    "test:types": "pnpm -r --parallel --if-present test:types",
+    "test": "run -p lint test:unit test:types",
+    "commit": "cz",
+    "updateGitHooks": "simple-git-hooks",
+    "release": "echo todo"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/config-pnpm-scopes": "^19.8.1",
+    "@commitlint/cz-commitlint": "^19.8.1",
+    "@trigen/eslint-config": "8.0.0-alpha.33",
+    "@trigen/scripts": "8.0.0-alpha.33",
+    "@vitest/coverage-v8": "^3.0.0",
+    "clean-publish": "^5.0.0",
+    "commitizen": "^4.2.4",
+    "del-cli": "^6.0.0",
+    "eslint": "^8.28.0",
+    "nano-staged": "^0.8.0",
+    "simple-git-hooks": "^2.7.0",
+    "tsm": "^2.3.0",
+    "typescript": "5.2.2",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}

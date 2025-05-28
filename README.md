@@ -1,0 +1,34 @@
+# simple-utils
+
+[![Node version][node]][node-url]
+[![Build status][build]][build-url]
+[![Coverage status][coverage]][coverage-url]
+
+[node]: https://img.shields.io/node/v/simple-utils.svg
+[node-url]: https://nodejs.org
+
+[build]: https://img.shields.io/github/actions/workflow/status/TrigenSoftware/simple-utils/tests.yml?branch=main
+[build-url]: https://github.com/TrigenSoftware/simple-utils/actions
+
+[coverage]: https://img.shields.io/codecov/c/github/TrigenSoftware/simple-utils.svg
+[coverage-url]: https://app.codecov.io/gh/TrigenSoftware/simple-utils
+
+A set of packages with simple utilities.
+
+<!--
+
+## Available tools
+
+| Name | Description | Version | Dependencies |
+|------|-------------|---------|--------------|
+| [`simple-github-release`](packages/simple-github-release#readme) | A simple tool to create GitHub releases. | [![NPM version][simple-github-release-npm]][simple-github-release-npm-url] | [![Dependencies status][simple-github-release-deps]][simple-github-release-deps-url] |
+
+<!-- simple-github-release - - >
+
+[simple-github-release-npm]: https://img.shields.io/npm/v/simple-github-release.svg
+[simple-github-release-npm-url]: https://www.npmjs.com/package/simple-github-release
+
+[simple-github-release-deps]: https://img.shields.io/librariesio/release/npm/simple-github-release
+[simple-github-release-deps-url]: https://libraries.io/npm/simple-github-release/tree
+
+-->
