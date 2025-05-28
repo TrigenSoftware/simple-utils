@@ -15,20 +15,16 @@
 
 A set of packages with simple utilities.
 
-<!--
-
 ## Available tools
 
 | Name | Description | Version | Dependencies |
 |------|-------------|---------|--------------|
-| [`simple-github-release`](packages/simple-github-release#readme) | A simple tool to create GitHub releases. | [![NPM version][simple-github-release-npm]][simple-github-release-npm-url] | [![Dependencies status][simple-github-release-deps]][simple-github-release-deps-url] |
+| [`@simple-libs/hosted-git-info`](packages/hosted-git-info#readme) | A small library to parse hosted git info. | [![NPM version][hosted-git-info-npm]][hosted-git-info-npm-url] | [![Dependencies status][hosted-git-info-deps]][hosted-git-info-deps-url] |
 
-<!-- simple-github-release - - >
+<!-- hosted-git-info -->
 
-[simple-github-release-npm]: https://img.shields.io/npm/v/simple-github-release.svg
-[simple-github-release-npm-url]: https://www.npmjs.com/package/simple-github-release
+[hosted-git-info-npm]: https://img.shields.io/npm/v/@simple-libs/hosted-git-info.svg
+[hosted-git-info-npm-url]: https://www.npmjs.com/package/@simple-libs/hosted-git-info
 
-[simple-github-release-deps]: https://img.shields.io/librariesio/release/npm/simple-github-release
-[simple-github-release-deps-url]: https://libraries.io/npm/simple-github-release/tree
-
--->
+[hosted-git-info-deps]: https://img.shields.io/librariesio/release/npm/@simple-libs/hosted-git-info
+[hosted-git-info-deps-url]: https://libraries.io/npm/@simple-libs%2hosted-git-info/tree

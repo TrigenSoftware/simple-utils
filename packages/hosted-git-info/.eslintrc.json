@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@trigen/eslint-config/typescript",
+    "@trigen/eslint-config/typescript-requiring-type-checking",
+    "@trigen/eslint-config/jest"
+  ],
+  "parserOptions": {
+    "tsconfigRootDir": "./packages/hosted-git-info",
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "prefer-destructuring": "off"
+  }
+}
