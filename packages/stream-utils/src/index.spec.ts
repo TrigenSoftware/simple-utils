@@ -1,4 +1,5 @@
 import { spawn } from 'child_process'
+import { Readable } from 'stream'
 import {
   describe,
   it,
@@ -6,7 +7,8 @@ import {
 } from 'vitest'
 import {
   toArray,
-  mergeReadables
+  mergeReadables,
+  splitStream
 } from './index.js'
 
 function stream(id: string, time: number) {
@@ -28,6 +30,26 @@ describe('stream-utils', () => {
       const result = await toArray(merged)
 
       expect(result).toHaveLength(20)
+    })
+  })
+
+  describe('splitStream', () => {
+    it('should split strings stream by separator', async () => {
+      const stream = Readable.from([
+        '1 2',
+        ' 3',
+        ' 4 5 6'
+      ])
+      const result = await toArray(splitStream(stream, ' '))
+
+      expect(result).toEqual([
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6'
+      ])
     })
   })
 })

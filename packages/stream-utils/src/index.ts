@@ -89,3 +89,30 @@ export function mergeReadables<
 
   return mergedStream
 }
+
+/**
+ * Split stream by separator.
+ * @param stream
+ * @param separator
+ * @yields String chunks.
+ */
+export async function* splitStream(stream: AsyncIterable<string | Buffer>, separator: string) {
+  let chunk: string | Buffer
+  let payload: string[]
+  let buffer = ''
+
+  for await (chunk of stream) {
+    buffer += chunk.toString()
+
+    if (buffer.includes(separator)) {
+      payload = buffer.split(separator)
+      buffer = payload.pop() || ''
+
+      yield* payload
+    }
+  }
+
+  if (buffer) {
+    yield buffer
+  }
+}
