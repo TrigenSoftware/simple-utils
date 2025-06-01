@@ -1,7 +1,7 @@
 {
   "name": "@simple-libs/hosted-git-info",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small library to parse hosted git info.",
   "author": {
     "name": "Dan Onoshko",

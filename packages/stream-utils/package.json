@@ -1,7 +1,7 @@
 {
   "name": "@simple-libs/stream-utils",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A small set of utilities for streams.",
   "author": {
     "name": "Dan Onoshko",
