@@ -8,7 +8,8 @@ import {
 import {
   toArray,
   mergeReadables,
-  splitStream
+  splitStream,
+  firstFromStream
 } from './index.js'
 
 function stream(id: string, time: number) {
@@ -50,6 +51,26 @@ describe('stream-utils', () => {
         '5',
         '6'
       ])
+    })
+  })
+
+  describe('firstFromStream', () => {
+    it('should return the first element', async () => {
+      const stream = Readable.from([
+        '1 2',
+        ' 3',
+        ' 4 5 6'
+      ])
+      const result = await firstFromStream(stream)
+
+      expect(result).toEqual('1 2')
+    })
+
+    it('should return null if the stream is empty', async () => {
+      const stream = Readable.from([])
+      const result = await firstFromStream(stream)
+
+      expect(result).toEqual(null)
     })
   })
 })
