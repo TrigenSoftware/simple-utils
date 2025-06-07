@@ -12,5 +12,8 @@
   "ignorePatterns": [
     "packages/*/dist/**/*",
     "packages/*/package/**/*"
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "error"
+  }
 }
