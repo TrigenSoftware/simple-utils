@@ -1,4 +1,4 @@
-import { type ChildProcess } from 'child_process'
+import type { ChildProcess } from 'child_process'
 import { concatBufferStream } from '@simple-libs/stream-utils'
 
 /**
