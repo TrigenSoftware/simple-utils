@@ -64,13 +64,27 @@ export async function throwProcessError(process: ChildProcess) {
  * @yields The stdout of the process.
  */
 export async function* outputStream(process: ChildProcess) {
-  const error = throwProcessError(process)
+  const { stdout } = process
+  const errorPromise = catchProcessError(process)
 
-  if (process.stdout) {
-    yield* process.stdout as AsyncIterable<Buffer>
+  if (stdout) {
+    stdout.on('error', (err) => {
+      // Iteration was interrupted, e.g. by `break` or `return` in a for-await loop.
+      if (err.name === 'AbortError' && process.exitCode === null) {
+        process.kill('SIGKILL')
+      }
+    })
+
+    yield* stdout as AsyncIterable<Buffer>
   }
 
-  await error
+  // Handle error only if iteration was not interrupted.
+
+  const error = await errorPromise
+
+  if (error) {
+    throw error
+  }
 }
 
 /**

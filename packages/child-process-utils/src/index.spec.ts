@@ -79,6 +79,32 @@ describe('child-process-utils', () => {
         }
       }).rejects.toThrow('Process exited with non-zero code')
     })
+
+    it('should kill process on loop break', async () => {
+      const childProcess = child(`
+        (async () => {
+          for (let i = 3; i > 0; i--) {
+            console.log('log' + i)
+            await new Promise((resolve) => setTimeout(resolve, 1000))
+          }
+        })()
+      `)
+      const output = outputStream(childProcess)
+      const start = Date.now()
+      let result = ''
+
+      for await (const line of output) {
+        result = line.toString()
+        break
+      }
+
+      await exitCode(childProcess)
+
+      const end = Date.now()
+
+      expect(result).toBe('log3\n')
+      expect(end - start).toBeLessThan(100)
+    })
   })
 
   describe('output', () => {
