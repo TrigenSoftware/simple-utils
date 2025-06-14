@@ -1,7 +1,7 @@
 {
   "name": "@simple-libs/child-process-utils",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small set of utilities for child process.",
   "author": {
     "name": "Dan Onoshko",
